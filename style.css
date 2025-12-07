@@ -11,6 +11,10 @@
   box-sizing: border-box;
   font-family: "Figtree", sans-serif;
 }
+a:active, a:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
 html {
   background-color: var(--yellow);
 }
