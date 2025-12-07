@@ -3,7 +3,8 @@
   --white: hsl(0, 0%, 100%);
   --gray-500: hsl(0, 0%, 42%);
   --gray-950: hsl(0, 0%, 7%);
-  font-size: min(1rem);
+  font-size: min(0.9rem);
+  --box-shadow: min(0.5rem) min(0.5rem) 0 rgb(0, 0, 0)
 }
 * {
   margin: 0;
@@ -39,11 +40,14 @@ p {
   align-items: center;
   margin-bottom: min(0.3rem);
 }
+.author img {
+  height: min(2rem);
+}
 .arg {
   margin-bottom: min(1rem);
 }
 .av {
-  margin-left: min(0.5rem);
+  margin-inline-end: min(0.5rem);
 }
 .avk {
   color: var(--gray-500);
@@ -65,25 +69,25 @@ p {
   margin: auto;
   padding: min(1.2rem);
   border: 1px solid var(--gray-950);
-  box-shadow: min(0.5rem) min(0.5rem) 0 rgb(0, 0, 0);
+  box-shadow: var(--box-shadow);
   display: flex;
   flex-direction: column;
 }
 .ill {
   width: 100%;
   border-radius: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: min(1rem);
 }
 .highlight {
   color: var(--gray-950);
   background-color: var(--yellow);
   border-radius: 0.2rem;
-  padding: 0.5rem 1rem;
+  padding: min(0.5rem) min(1rem);
   width: fit-content;
 }
 
-@media (max-width: 25rem) {
+@media (min-width: 25.001rem) {
   :root {
-    font-size: min(0.9rem);
+    font-size: min(1rem);
   }
 }
