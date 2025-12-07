@@ -38,13 +38,13 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: min(0.3rem);
+  margin-block-end: min(0.3rem);
 }
 .author img {
   height: min(2rem);
 }
 .arg {
-  margin-bottom: min(1rem);
+  margin-block: min(1rem);
 }
 .av {
   margin-inline-end: min(0.5rem);
@@ -76,7 +76,7 @@ p {
 .ill {
   width: 100%;
   border-radius: 1rem;
-  margin-bottom: min(1rem);
+  margin-block-end: min(1rem);
 }
 .highlight {
   color: var(--gray-950);
